@@ -1,0 +1,370 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-09-09T20:33:34.120Z",
+    "__export_source": "insomnia.desktop.app:v9.3.3",
+    "resources": [
+        {
+            "_id": "req_aa48e75f599646bbb6148d3026d43fa5",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913312964,
+            "created": 1725892659181,
+            "url": "{{ _.host }}/api/products",
+            "name": "GET /products",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892893132,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "parentId": null,
+            "modified": 1725913993124,
+            "created": 1725911041860,
+            "name": "alten-exercise.yaml",
+            "description": "",
+            "scope": "design",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_df0570942b6d4951ad4f8f2714db53bb",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913317332,
+            "created": 1725901469927,
+            "url": "{{ _.host }}/api/products",
+            "name": "POST /products",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"id\": 8888,\n\t\"code\": \"f230fh0g3\",\n\t\"name\": \"{% faker 'randomProduct' %}\",\n\t\"description\": \"Product Description\",\n\t\"image\": \"bamboo-watch.jpg\",\n\t\"price\": {% faker 'randomPrice' %},\n\t\"category\": \"Accessories\",\n\t\"createdAt\": 1718114215761,\n\t\"updatedAt\": 1718114215761,\n\t\"shellId\": 15,\n\t\"internalReference\": \"REF-123-456\",\n\t\"inventoryStatus\": \"INSTOCK\",\n\t\"rating\": 5\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892893082,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_e091f8073e4a4fe2a32b19965ce05be9",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913325559,
+            "created": 1725904836047,
+            "url": "{{ _.host }}/api/products",
+            "name": "DEL /products (reset the DB)",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892893032,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_8c0b4945a9bd43f9a408b01790ab3fac",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913329286,
+            "created": 1725904582381,
+            "url": "{{ _.host }}/api/products/1000",
+            "name": "GET /products/1000",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892892732,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_cb568e1af22d49778c5c0b36541243ee",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913332717,
+            "created": 1725911594950,
+            "url": "{{ _.host }}/api/products/1001",
+            "name": "GET /products/1001",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892892707,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_bf2eee6c523c4674ac9b5990ceb4a655",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913339514,
+            "created": 1725904580634,
+            "url": "{{ _.host }}/api/products/1001",
+            "name": "PATCH /products/1001",
+            "description": "",
+            "method": "PATCH",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"id\": 1001,\n\t\"name\": \"Nouveau nom\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892892682,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4cbb7bcde2384f9e9ac9282bd239797b",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913344629,
+            "created": 1725892892632,
+            "url": "{{ _.host }}/api/products/1000",
+            "name": "DEL /products/1000",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/9.3.3"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1725892892632,
+            "isPrivate": false,
+            "pathParameters": [],
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_057d772b5688473b6f09a9901b014a161d5872d1",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725911192654,
+            "created": 1725911041861,
+            "name": "Base Environment",
+            "data": {
+                "host": "http://localhost:3000"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "host"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1725911041861,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_057d772b5688473b6f09a9901b014a161d5872d1",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725911041862,
+            "created": 1725911041862,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_758f433a270542248497e5f8a0ea738f",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725913993123,
+            "created": 1725911041861,
+            "fileName": "alten-exercise.yaml",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        },
+        {
+            "_id": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "parentId": "wrk_f08d9e517e4d413ca82660a2f0a257c5",
+            "modified": 1725911068243,
+            "created": 1725911068243,
+            "name": "New Suite",
+            "metaSortKey": -1725911068243,
+            "_type": "unit_test_suite"
+        },
+        {
+            "_id": "ut_f1a244ba4da1403ebf6b07b29776963c",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725912851431,
+            "created": 1725911070498,
+            "requestId": "req_aa48e75f599646bbb6148d3026d43fa5",
+            "name": "Get all products",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+            "metaSortKey": -1725911131417,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_88c242a9f55e4b8995334a92064bafff",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725912860566,
+            "created": 1725911140484,
+            "requestId": "req_8c0b4945a9bd43f9a408b01790ab3fac",
+            "name": "Get prod. 1000",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+            "metaSortKey": -1725911105490.5,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_fc02fab02ca745f98cb78accab6187b7",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725912851428,
+            "created": 1725911207922,
+            "requestId": "req_e091f8073e4a4fe2a32b19965ce05be9",
+            "name": "Reset the DB",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+            "metaSortKey": -1725911144380.25,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_d9418fe0507943459f35f0c5eb8826a2",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725912881646,
+            "created": 1725911339944,
+            "requestId": "req_4cbb7bcde2384f9e9ac9282bd239797b",
+            "name": "Delete prod. 1000",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+            "metaSortKey": -1725911082798.754,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_9e60e430695b4bedaeb9f6bb7e291bbb",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725912881647,
+            "created": 1725911377534,
+            "requestId": "req_8c0b4945a9bd43f9a408b01790ab3fac",
+            "name": "Check that 1000 doesn't exist anymore",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(404);",
+            "metaSortKey": -1725911073229.9453,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_e8b3d7711bd5435393288607f74247d1",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725913208014,
+            "created": 1725911470329,
+            "requestId": "req_bf2eee6c523c4674ac9b5990ceb4a655",
+            "name": "1001, name = Nouveau nom",
+            "code": "const response1 = await insomnia.send();\nexpect(response1.status).to.equal(200);",
+            "metaSortKey": -1725911073228.9453,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_b7b14db8de8549e6be517498c97233fc",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725913212734,
+            "created": 1725911651833,
+            "requestId": "req_cb568e1af22d49778c5c0b36541243ee",
+            "name": "1001, name == Nouveau nom",
+            "code": "const response1 = await insomnia.send();\nconst body = JSON.parse(response1.data);\nexpect(body.name).to.equal(\"Nouveau nom\");",
+            "metaSortKey": -1725911073226.9453,
+            "_type": "unit_test"
+        },
+        {
+            "_id": "ut_e944fab54b234fb385f084cfe7a59beb",
+            "parentId": "uts_8a41df867e2b4fe9ae038d47b07103c1",
+            "modified": 1725913262125,
+            "created": 1725911660894,
+            "requestId": "req_cb568e1af22d49778c5c0b36541243ee",
+            "name": "1001, name == Black Watch",
+            "code": "const response1 = await insomnia.send();\nconst body = JSON.parse(response1.data);\nexpect(body.name).to.equal(\"Black Watch\");\n",
+            "metaSortKey": -1725911073229.0703,
+            "_type": "unit_test"
+        }
+    ]
+}

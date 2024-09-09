@@ -69,9 +69,11 @@ router.patch('/products/:id', async (req, res) => {
     const { code, name, description, image, category, price, quantity, internalReference, shellId, inventoryStatus, rating } = req.body;
     const updatedAt = Date.now();
 
+    const updateFields = Object.keys(req.body).map(key => `${key} = ?`).join(', ');
+    const updateValues = Object.values(req.body);
+
     db.run(
-        `UPDATE products SET code = ?, name = ?, description = ?, image = ?, category = ?, price = ?, quantity = ?, internalReference = ?, shellId = ?, inventoryStatus = ?, rating = ?, updatedAt = ? WHERE id = ?`,
-        [code, name, description, image, category, price, quantity, internalReference, shellId, inventoryStatus, rating, updatedAt, req.params.id], function (err: Error | null) {
+        `UPDATE products SET ${updateFields}, updatedAt = ? WHERE id = ?`, [...updateValues, updatedAt, req.params.id], function (err: Error | null) {
             if (err) {
                 console.error('Error updating product:', err);
                 res.status(500).json({ message: 'Error updating product' });
@@ -81,7 +83,6 @@ router.patch('/products/:id', async (req, res) => {
                 res.status(404).json({ message: 'Product not found' });
             }
         });
-
 });
 
 // Delete a product
