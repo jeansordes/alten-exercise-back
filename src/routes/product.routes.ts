@@ -16,7 +16,6 @@ router.post('/products', async (req, res) => {
     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
         [code, name, description, image, category, price, quantity, internalReference, shellId, inventoryStatus, rating, createdAt, updatedAt]
         , function (err: Error | null) {
-            console.log(this, err);
             if (err) {
                 console.error('Error creating product:', err);
                 res.status(500).json({ message: 'Error creating product' });

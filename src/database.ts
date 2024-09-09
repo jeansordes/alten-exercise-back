@@ -3,7 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import { Product } from './product.model';
 
-let db: sqlite3.Database = new sqlite3.Database('./app.sqlite.db'); // alternative => :memory:
+let db: sqlite3.Database = new sqlite3.Database(':memory:');
+    // alternatives => ':memory:'
+    // alternatives => './app.sqlite.db'
 
 export const initDb = async () => {
     db.exec(`CREATE TABLE IF NOT EXISTS products (
