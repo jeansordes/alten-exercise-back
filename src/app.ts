@@ -5,7 +5,7 @@ import { initDb } from './database';
 import cors from 'cors';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(bodyParser.json());
@@ -15,6 +15,7 @@ app.use(cors({
 
 // Routes
 app.use('/api', productRoutes);
+app.get("/", (req, res) => res.send(":)"));
 
 // Initialize the database and start the server
 initDb().then(() => {
