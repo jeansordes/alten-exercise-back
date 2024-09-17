@@ -1,6 +1,6 @@
 import express from 'express';
 import bodyParser from 'body-parser';
-import productRoutes from './routes/product.routes';
+import productRoutes from './product.routes';
 import { initDb } from './database';
 import cors from 'cors';
 
